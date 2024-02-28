@@ -37,9 +37,6 @@ public class PackageController {
     @GetMapping(path = "/cost")
     public Mono<PackageCostResponse> getCostEstimate(@Validated PackageInfo packageInfo,
                                                      @RequestParam(value = "voucher", required = false) String voucher) {
-        if (!packageInfo.isValid()) { //Simple check for volume, if parameters for L W H is not present, default value is 0.0
-            throw new RequestValidationException("Invalid request, please refer to API documentation.");
-        }
         return packageService.calculatePackageCost(packageInfo, voucher);
     }
 }

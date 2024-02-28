@@ -226,7 +226,7 @@ class PackageControllerTest {
                 .exchange()
                 .expectStatus().is4xxClientError()
                 .expectBody()
-                .jsonPath("$.errorMessage").isEqualTo("Invalid request, please refer to API documentation.");
+                .jsonPath("$.errorMessage").isEqualTo("Validation failure");
     }
 
 
