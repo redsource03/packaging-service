@@ -20,4 +20,8 @@ app:
       large:
         price: 0.05
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/api-docs.html
+
 
