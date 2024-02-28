@@ -1,0 +1,23 @@
+app:
+  api:
+    voucher:
+      host: ${VOUCHER_HOST:http://localhost:8081}
+      api-key: ${VOUCHER_API_KEY:apikey}
+  parcel:
+    weight:
+      reject:
+        value: 50.00
+      heavy:
+        value: 10.00
+        price: 20.00
+    volume:
+      small:
+        value: 1500.00
+        price: 0.03
+      medium:
+        value: 2500.00
+        price: 0.04
+      large:
+        price: 0.05
+
+

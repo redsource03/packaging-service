@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/voucher/error?key=apikey"
+  },
+
+  "response": {
+    "transformers": ["response-template"],
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/voucher/valid?key=apikey"
+  },
+
+  "response": {
+    "transformers": ["response-template"],
+    "status": 200,
+    "jsonBody": {
+      "code": "123",
+      "discount": 0.20,
+      "expiry": "{{now offset='3 days' format='yyyy-MM-dd'}}"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
