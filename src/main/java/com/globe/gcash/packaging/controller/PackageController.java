@@ -1,6 +1,5 @@
 package com.globe.gcash.packaging.controller;
 
-import com.globe.gcash.packaging.exception.RequestValidationException;
 import com.globe.gcash.packaging.model.PackageInfo;
 import com.globe.gcash.packaging.model.response.GenericErrorResponse;
 import com.globe.gcash.packaging.model.response.PackageCostResponse;
