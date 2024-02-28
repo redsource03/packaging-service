@@ -27,7 +27,7 @@ public class PackageController {
             @ApiResponse(responseCode = "200", description = "Ok", content =
                     {@Content(mediaType = "application/json", schema =
                     @Schema(implementation = PackageInfo.class))}),
-            @ApiResponse(responseCode = "400", description = "Invalid Request parameters", content =
+            @ApiResponse(responseCode = "400", description = "Invalid Request parameters, if L,W,H, Weight is Zero", content =
                     {@Content(mediaType = "application/json", schema =
                     @Schema(implementation = GenericErrorResponse.class))}),
             @ApiResponse(responseCode = "500", description = "Internal server error", content =
